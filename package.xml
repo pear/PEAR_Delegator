@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.4.6" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+http://pear.php.net/dtd/tasks-1.0.xsd
+http://pear.php.net/dtd/package-2.0
+http://pear.php.net/dtd/package-2.0.xsd">
+    <name>PEAR_Delegator</name>
+    <channel>pear.php.net</channel>
+    <summary>Delegation for PHP</summary>
+    <description>This package implements traditional and unorthodox delegation in PHP. This allows for pseudo multiple inheritance and other interesting design paradigms.
+    </description>
+    <lead>
+      <name>Michael Witten</name>
+      <user>herrwitten</user>
+      <email>herrwitten@php.net</email>
+      <active>yes</active>
+    </lead>
+    <date>2006-03-18</date>
+    <time>20:58:17</time>
+    <version>
+        <release>0.1.2</release>
+        <api>0.1.2</api>
+    </version>
+    <stability>
+        <release>alpha</release>
+        <api>alpha</api>
+    </stability>
+    <license uri="http://www.php.net/license">PHP License</license>
+    <notes>
+        Though categorized as alpha, this code should be quite stable. However, semantics and organization may change in this stage.
+    </notes>
+    <contents>
+        <dir name="/">
+            <dir name="Delegator">
+                <dir name="Exception">
+                    <file baseinstalldir="PEAR" name="DelegateUndefined.php" role="php" />
+                    <file baseinstalldir="PEAR" name="Exception.php" role="php" />
+                    <file baseinstalldir="PEAR" name="MethodUndefined.php" role="php" />
+                </dir><!-- //Delegator/Exception -->
+                <dir name="Internal">
+                    <file baseinstalldir="PEAR" name="Extension.php" role="php" />
+                    <file baseinstalldir="PEAR" name="ForwardProxy.php" role="php" />
+                </dir><!-- //Delegator/Internal -->
+            </dir><!-- //Delegator -->
+            <file baseinstalldir="PEAR" name="Delegator.php" role="php" />
+        </dir><!-- / -->
+    </contents>
+    <dependencies>
+        <required>
+            <php>
+                <min>5.0.0</min>
+                <max>6.0.0</max>
+            </php>
+            <pearinstaller>
+                <min>1.4.0b1</min>
+                <max>6.0.0</max>
+            </pearinstaller>
+        </required>
+    </dependencies>
+    <phprelease />
+</package>
