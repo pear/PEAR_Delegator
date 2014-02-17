@@ -1,0 +1,28 @@
+{
+    "authors": [
+        {
+            "email": "herrwitten@php.net",
+            "name": "Michael Witten",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    },
+    "description": "More info available on: http://pear.php.net/package/PEAR_Delegator",
+    "license": "PHP License",
+    "name": "pear/pear_delegator",
+    "support": {
+        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=PEAR_Delegator",
+        "source": "https://github.com/pear/PEAR_Delegator"
+    },
+    "type": "library",
+    "require": {
+        "pear/pear_exception": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
